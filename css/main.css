@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================
+   fonts
+   ========================== */
+@import url(http://fonts.googleapis.com/css?family=Handlee|Raleway);
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+html {
+  font-size: 17px;
+}
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/* Modules will scale with document */
+.header {
+  font-size: 1.5rem;
+}
+.footer {
+  font-size: 0.75rem;
+}
+.sidebar {
+  font-size: 0.85rem;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+
+
+
+
+/* ==========================
+   globals
+   ========================== */
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.light {
+	font-weight: lighter;
+}
+
+p {
+	margin: 8px 0px 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 15px 0px 20px;
+	
+}
+
+a,
+a:hover, 
+a:focus {
+	color: #3ec7c2;
+}
+
+.blocked {
+	border-left: solid 10px #CCFF00; /* bright yellow */
+	
+}
+
+.blocked p {
+	padding-left: 30px;
+}
+
+/* buttons */
+.btn {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 5px 0px;
+}
+
+.btn:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+.btn-yellow {
+	background-color: #CCFF00;
+	box-shadow: 2px 4px #BFEF02;
+}
+
+.btn-yellow:hover {
+	background-color: #DAFF47;
+}
+
+.btn-dark {
+	background-color: #282E33;
+	box-shadow: 2px 4px #030E1F;
+}
+
+.btn-dark:hover {
+	background-color: #203A51;
+	color: #fff;
+}
+
+/* ==========================
+   heading
+   ========================== */
+.jumbotron {
+	background-color: #3ec7c2; /* teal */
+}
+
+.jumbotron h1 {
+	color: #fff; 
+	font-size: 3.5em;
+}
+
+.jumbotron p {
+	font-family: 'Handlee', cursive;
+	font-size: 2em;
+	
+}
+
+/* ==========================
+   body
+   ========================== */
+
+section {
+	padding: 15px 0px;
+}
+
+.col-md-8 h2 {
+	font-family: 'Handlee', cursive;
+}
+
+
+.panel-title {
+	font-size: 1.5em;
+}
+
+.panel-body {
+	background-color: #FAFAEC;
+}
+
+.panel-heading {
+	background-color: #3ec7c2;
+}
+
+/* ==========================
+   side nav
+   ========================== */
+
+ul.nav-tabs {
+	width: 300px;
+	margin-top: 50px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li {
+	margin: 0;
+	border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child {
+	border-top: none;
+}
+ul.nav-tabs li a {
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+	color: #fff;
+	background: #3ec7c2;
+	border: 1px solid #3ec7c2;
+}
+ul.nav-tabs li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix {
+	top: 50px;  /* Set the top position of pinned element */
+}
+
+
+/* ==========================
+   heading
+   ========================== */
+.footer {
+	margin-top: 30px; 
+	padding: 20px 0px;
+	background-color: #282E33; /* dark */
+	color: #fff;
+}
+
+.footer .social {
+	padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+

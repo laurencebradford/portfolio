@@ -41,7 +41,7 @@ h2 {
   font-size: 2.5em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 
@@ -65,7 +65,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 15px 0px 20px;
+	margin: 20px 0px 15px;
 	
 }
 
@@ -132,7 +132,7 @@ a:focus {
 
 .jumbotron p {
 	font-family: 'Handlee', cursive;
-	font-size: 2em;
+	font-size: 1.2em;
 	
 }
 

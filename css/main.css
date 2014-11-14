@@ -24,7 +24,7 @@ html {
 
 /* Modules will scale with document */
 .header {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .footer {
   font-size: 0.75rem;
@@ -35,10 +35,10 @@ html {
 
 /* Type will scale with modules */
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 h3 {
   font-size: 1.7em;
@@ -56,9 +56,6 @@ h3 {
 	margin-bottom: 0px;
 }
 
-.light {
-	font-weight: lighter;
-}
 
 p {
 	margin: 8px 0px 15px;
@@ -75,6 +72,11 @@ a:focus {
 	color: #3ec7c2;
 }
 
+.lead {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
 .blocked {
 	border-left: solid 10px #CCFF00; /* bright yellow */
 	
@@ -82,6 +84,7 @@ a:focus {
 
 .blocked p {
 	padding-left: 30px;
+	margin: 15px 0px;
 }
 
 /* buttons */
@@ -122,19 +125,28 @@ a:focus {
    heading
    ========================== */
 .jumbotron {
-	background-color: #3ec7c2; /* teal */
+	background: #cccccc url("../img/streetart-swirl.jpg") no-repeat left center;  
+}
+
+.jumbotron .lb {
+	padding: 10px 20px;
+	background-color: rgba(250, 250, 255, 0.7);
 }
 
 .jumbotron h1 {
-	color: #fff; 
+	color: #333; 
 	font-size: 3.5em;
+	font-weight: bold;
+	text-shadow: 1px 1px #0A0A0A;
 }
 
 .jumbotron p {
 	font-family: 'Handlee', cursive;
 	font-size: 1.2em;
+	font-weight: bold;
 	
 }
+
 
 /* ==========================
    body
@@ -148,63 +160,102 @@ section {
 	font-family: 'Handlee', cursive;
 }
 
+/* ==========================
+   panel
+   ========================== */
+
+
 
 .panel-title {
 	font-size: 1.5em;
 }
 
-.panel-body {
-	background-color: #FAFAEC;
+.panel-title a:hover {
+	-webkit-transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-ms-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+	color: #fff;
+	text-decoration: none;
 }
 
-.panel-heading {
-	background-color: #3ec7c2;
+
+.panel-body {
+	background-color: #fff;
+}
+
+.panel-default>.panel-heading {
+	background-image: none;
+	background-color: #3EC7C2;
+}
+
+/* ==========================
+writing section
+========================== */
+.content a {
+	
+}
+
+.content li {
+	padding: 5px 0px 2px;
 }
 
 /* ==========================
    side nav
    ========================== */
+img.sidebar {
+    padding: 0px 50px;
+}   
 
-ul.nav-tabs {
+ul.sidebar {
 	width: 300px;
-	margin-top: 50px;
+	margin-top: 40px;
 	border-radius: 4px;
-	border: 1px solid #ddd;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.667);
+
 }
-ul.nav-tabs li {
+ul.sidebar li {
 	margin: 0;
-	border-top: 1px solid #ddd;
+	
 }
-ul.nav-tabs li:first-child {
+ul.sidebar li:first-child {
 	border-top: none;
 }
-ul.nav-tabs li a {
+ul.sidebar li a {
 	margin: 0;
 	padding: 8px 16px;
 	border-radius: 0;
+	color: #333;
 }
-ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+
+ul.sidebar li a:hover {
+	background: #3ec7c2;
+	color: #fff;
+}
+ul.sidebar li.active a, ul.sidebar li.active a:hover {
 	color: #fff;
 	background: #3ec7c2;
-	border: 1px solid #3ec7c2;
 }
-ul.nav-tabs li:first-child a {
+ul.sidebar li:first-child a {
 	border-radius: 4px 4px 0 0;
 }
-ul.nav-tabs li:last-child a {
+ul.sidebar li:last-child a {
 	border-radius: 0 0 4px 4px;
 }
-ul.nav-tabs.affix {
-	top: 50px;  /* Set the top position of pinned element */
+ul.sidebar.affix {
+	top: 20px;  /* Set the top position of pinned element */
 }
 
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: #fff;
+}
 
 /* ==========================
-   heading
+   footer
    ========================== */
 .footer {
-	margin-top: 30px; 
+	margin-top: 40px; 
 	padding: 20px 0px;
 	background-color: #282E33; /* dark */
 	color: #fff;
@@ -212,6 +263,19 @@ ul.nav-tabs.affix {
 
 .footer .social {
 	padding-bottom: 40px;
+}
+
+.footer a > i  {
+	color: #fff;
+}
+
+.footer a > i:hover {
+	color: #CCFF00;
+	-webkit-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	-ms-transition: color 0.3s ease-in;
+	-o-transition: color 0.3s ease-in;
+	transition: color 0.3s ease-in;
 }
 
 
